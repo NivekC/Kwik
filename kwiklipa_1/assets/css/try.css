@@ -1,0 +1,116 @@
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container1 .box1{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,1);
+    border-radius: 4px;
+    margin:20px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+.container1 .box1:before{
+    content: '';
+    width: 50%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255,255,.2);
+    z-index: 2;
+    pointer-events: none ;
+}
+
+.container1 .box1 .icon1{
+    position: relative;
+    width:80px;
+    height: 80px;
+    color: #fff;
+    background: #1F65DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 70;
+    transition: 1s;
+    font-weight: 700;
+    }
+    .container1 .box1:nth-child(1) .icon1
+    {
+        box-shadow:  0 0 0 0 white;
+        background: #1F65DB;
+    }
+    .container1 .box1:nth-child(1):hover .icon1{
+        box-shadow: 0 0 0 400px #1F65DB;
+        background: #1F65DB;
+
+    }
+    .container1 .box1:nth-child(2) .icon1{
+        box-shadow:  0 0 0 0 #1F65DB;
+        background: #1F65DB;
+        
+
+    }
+    .container1 .box1:nth-child(2):hover .icon1{
+        box-shadow: 0 0 0 400px #1F65DB;
+
+    }
+    .container1 .box1:nth-child(3) .icon1{
+        box-shadow:  0 0 0 0 #1F65DB;
+        background: #1F65DB;
+      
+    }
+    .container1 .box1:nth-child(3):hover .icon1
+    {
+        box-shadow: 0 0 0 400px #1F65DB;
+    }
+    .container1 .box1 .content1{
+        position: relative;
+        z-index: 1;
+        transition: 0.5s;        
+    }
+    .container1 .box1:hover .content1{
+        color: rgb(255, 255, 255);
+    }
+    .container1 .box1:hover .content1 h3{
+        font-size: 20px;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .container1 .box1:hover .content1 p{
+        margin: 10px 0;
+        padding: 0;
+    }
+    .a1
+    {
+        display:inline-block ;
+        padding: 10px;
+        background: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	}
+	
+	/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+    
